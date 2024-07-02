@@ -29,3 +29,5 @@ resources = {
     "milk": 200,
     "coffee": 100,
 }
+
+# TODO: 1. Print report of all coffee machine resources

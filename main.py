@@ -28,13 +28,23 @@ resources = {
     "water": 300,
     "milk": 200,
     "coffee": 100,
+    "money": 0,
 }
 
-# TODO: 1. Print report of all coffee machine resources
-#   Water: 100ml
-#   Milk: 50ml
-#   Coffee: 76g
-#   Money: $2.5
+# Print report of all coffee machine resources
+def print_resources(resources):
+    print("Water:", resources['water'])
+    print("Milk:", resources['milk'])
+    print("Coffee:", resources['coffee'])
+    print("Money:", resources['money'])
+
+
+print_resources(resources)
+
+is_still_running = True
+
+while is_still_running:
+
 
 # TODO: 2. Turn off when entering 'off' into prompt
 

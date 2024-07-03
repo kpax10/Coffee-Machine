@@ -31,6 +31,7 @@ resources = {
     "money": 0,
 }
 
+
 # Print report of all coffee machine resources
 def print_resources(resources):
     print("Water:", resources['water'])
@@ -39,7 +40,9 @@ def print_resources(resources):
     print("Money:", resources['money'])
 
 
-print_resources(resources)
+# def check_menu(input):
+#     # loop over menu
+
 
 is_still_running = True
 
@@ -50,6 +53,11 @@ while is_still_running:
 
 # TODO: 3. Prompt user by asking 'What would you like? (espresso/latte/cappuccino): '
 #   Prompt should continue to show up unless 'off' is entered
+
+    user_input = input("What would you like? (espresso/latte/cappuccino): ").lower()
+
+    if user_input == 'report':
+        print_resources(resources)
 
 # TODO 4. 4. Check resources sufficient?
 #   a. When the user chooses a drink, the program should check if there are enough

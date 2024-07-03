@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00cfc97b-d279-4897-a223-2276f870a064" name="Changes" comment="TODOs added">
+    <list default="true" id="00cfc97b-d279-4897-a223-2276f870a064" name="Changes" comment="print resources added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -16,6 +16,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kpax10"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:kpax10/Coffee-Machine.git",
+    "accountId": "d2504386-02a3-4abd-976b-2e670337be4b"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -31,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/kp/PycharmProjects/CoffeeMachine",
-    "settings.editor.selected.configurable": "preferences.general"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -71,12 +83,32 @@
       <option name="project" value="LOCAL" />
       <updated>1719960504857</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="print resources added">
+      <option name="closed" value="true" />
+      <created>1719963634982</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719963634982</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="TODOs added" />
-    <option name="LAST_COMMIT_MESSAGE" value="TODOs added" />
+    <MESSAGE value="print resources added" />
+    <option name="LAST_COMMIT_MESSAGE" value="print resources added" />
   </component>
 </project>

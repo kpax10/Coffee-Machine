@@ -40,31 +40,32 @@ def print_resources(resources):
     print("Money:", resources['money'])
 
 
-# def check_menu(input):
-#     # loop over menu
+def check_resources(user_input, MENU, resources):
+    # loop over menu
+    for drink in MENU:
+        if user_input == drink:
+            drink_ingredients = MENU[drink]['ingredients']
+            for ingredient in drink_ingredients:
+                if resources[ingredient] - drink_ingredients[ingredient] <= 0:
+                    print(f"Sorry, there is not enough {ingredient}")
+                    break
+                else:
+                    print('before', ingredient, resources[ingredient])
+                    resources[ingredient] -= drink_ingredients[ingredient]
 
 
 is_still_running = True
 
 while is_still_running:
-
-
-# TODO: 2. Turn off when entering 'off' into prompt
-
-# TODO: 3. Prompt user by asking 'What would you like? (espresso/latte/cappuccino): '
-#   Prompt should continue to show up unless 'off' is entered
-
     user_input = input("What would you like? (espresso/latte/cappuccino): ").lower()
 
     if user_input == 'report':
         print_resources(resources)
+    if user_input == 'off':
+        break
 
-# TODO 4. 4. Check resources sufficient?
-#   a. When the user chooses a drink, the program should check if there are enough
-#       resources to make that drink.
-#   b. E.g. if Latte requires 200ml water but there is only 100ml left in the machine. It should
-#       not continue to make the drink but print: “Sorry there is not enough water.”
-#   c. The same should happen if another resource is depleted, e.g. milk or coffee.
+    check = check_resources(user_input, MENU, resources)
+
 
 # TODO: 5. Display cost.
 

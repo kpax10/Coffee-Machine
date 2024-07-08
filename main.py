@@ -50,8 +50,8 @@ def check_resources(user_input, MENU, resources):
                     print(f"Sorry, there is not enough {ingredient}")
                     break
                 else:
-                    print('before', ingredient, resources[ingredient])
                     resources[ingredient] -= drink_ingredients[ingredient]
+                    # run function to request payment
 
 
 is_still_running = True

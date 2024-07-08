@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00cfc97b-d279-4897-a223-2276f870a064" name="Changes" comment="TODOs added">
-      <change beforePath="$PROJECT_DIR$/.idea/CoffeeMachine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CoffeeMachine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="00cfc97b-d279-4897-a223-2276f870a064" name="Changes" comment="check resources function added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -93,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719963634982</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="check resources function added">
+      <option name="closed" value="true" />
+      <created>1720396395954</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720396395954</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +117,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="TODOs added" />
     <MESSAGE value="print resources added" />
-    <option name="LAST_COMMIT_MESSAGE" value="print resources added" />
+    <MESSAGE value="check resources function added" />
+    <option name="LAST_COMMIT_MESSAGE" value="check resources function added" />
   </component>
 </project>

@@ -40,6 +40,24 @@ def print_resources(resources):
     print("Money:", resources['money'])
 
 
+def process_payment(drink_name, drink_cost, resources):
+    print('Please insert coins.')
+    quarters = int(input('how many quarters? ')) * 0.25
+    dimes = int(input('how many dimes? ')) * 0.10
+    nickels = int(input('how many nickels? ')) * 0.05
+    pennies = int(input('how many pennies? ')) * 0.01
+    total = float(quarters + dimes + nickels + pennies)
+
+    if total < drink_cost:
+        print("Sorry, that's not enough.  Money refunded.")
+        return
+    else:
+        change = total - drink_cost
+        resources['money'] += drink_cost
+        print(f"Here is your {drink_name}.")
+        print(f'Your change is ${change}.')
+
+
 def check_resources(user_input, MENU, resources):
     # loop over menu
     for drink in MENU:
@@ -50,24 +68,23 @@ def check_resources(user_input, MENU, resources):
                     print(f"Sorry, there is not enough {ingredient}")
                     break
                 else:
+                    drink_name = MENU[drink]
+                    drink_cost = MENU[drink]['cost']
+                    process_payment(drink, drink_cost, resources)
                     resources[ingredient] -= drink_ingredients[ingredient]
-                    # run function to request payment
+                    return
 
 
 is_still_running = True
 
 while is_still_running:
     user_input = input("What would you like? (espresso/latte/cappuccino): ").lower()
-
     if user_input == 'report':
         print_resources(resources)
     if user_input == 'off':
-        break
+        is_still_running = False
 
-    check = check_resources(user_input, MENU, resources)
-
-
-# TODO: 5. Display cost.
+    check_resources(user_input, MENU, resources)
 
 # TODO: 6.Process coins.
 #   a. If there are sufficient resources to make the drink selected, then the program should
